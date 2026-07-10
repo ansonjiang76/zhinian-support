@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support &amp; Privacy — TransPaste</title>
+  <meta name="description" content="Setup help, keyboard shortcuts, troubleshooting, and the TransPaste privacy policy.">
+  <meta name="theme-color" content="#f7f5f0">
+  <link rel="canonical" href="https://ansonjiang76.github.io/zhinian-support/transpaste/support/">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="../" aria-label="TransPaste home"><img src="../icon.svg" alt=""><span>TransPaste</span></a>
+        <nav aria-label="Primary navigation"><a href="../#features"><span data-copy="en">Features</span><span data-copy="zh" hidden>功能</span></a><a href="./"><span data-copy="en">Support</span><span data-copy="zh" hidden>支持</span></a><a href="#privacy"><span data-copy="en">Privacy</span><span data-copy="zh" hidden>隐私</span></a></nav>
+        <div class="language-switch" aria-label="Language selection"><button type="button" data-language-button="en" aria-pressed="true">EN</button><button type="button" data-language-button="zh" aria-pressed="false">中文</button></div>
+      </header>
+
+      <section class="support-hero">
+        <span class="eyebrow" data-copy="en">Help center</span><span class="eyebrow" data-copy="zh" hidden>帮助中心</span>
+        <h1 data-copy="en">TransPaste Support</h1><h1 data-copy="zh" hidden>TransPaste 技术支持</h1>
+        <p data-copy="en">Setup, shortcuts, troubleshooting, and clear answers about your privacy.</p><p data-copy="zh" hidden>查找安装设置、快捷键、故障排查和隐私相关说明。</p>
+        <div class="support-jumps"><a href="#quick-start"><span data-copy="en">Quick start</span><span data-copy="zh" hidden>快速开始</span></a><a href="#faq"><span data-copy="en">FAQ</span><span data-copy="zh" hidden>常见问题</span></a><a href="#privacy"><span data-copy="en">Privacy policy</span><span data-copy="zh" hidden>隐私政策</span></a></div>
+      </section>
+
+      <section id="quick-start" class="support-section">
+        <div class="support-section-title"><span>01</span><h2 data-copy="en">Quick start</h2><h2 data-copy="zh" hidden>快速开始</h2></div>
+        <div class="support-grid three">
+          <article><strong data-copy="en">1. Choose a language</strong><strong data-copy="zh" hidden>1. 选择目标语言</strong><p data-copy="en">Click the TransPaste menu bar icon and select the language you want.</p><p data-copy="zh" hidden>点击菜单栏中的 TransPaste 图标，选择需要粘贴的目标语言。</p></article>
+          <article><strong data-copy="en">2. Copy your text</strong><strong data-copy="zh" hidden>2. 复制原文</strong><p data-copy="en">Copy text from any app as usual with Command–C.</p><p data-copy="zh" hidden>在任意应用中正常使用 Command–C 复制文字。</p></article>
+          <article><strong data-copy="en">3. Translate and paste</strong><strong data-copy="zh" hidden>3. 翻译并粘贴</strong><p data-copy="en">Place the cursor in a text field and press Option–Command–V.</p><p data-copy="zh" hidden>把光标放入输入框，然后按 Option–Command–V。</p></article>
+        </div>
+      </section>
+
+      <section class="support-section">
+        <div class="support-section-title"><span>02</span><h2 data-copy="en">Keyboard shortcuts</h2><h2 data-copy="zh" hidden>快捷键</h2></div>
+        <div class="shortcut-table">
+          <div><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>V</kbd></span><div><strong data-copy="en">Translate and paste</strong><strong data-copy="zh" hidden>翻译并粘贴</strong><p data-copy="en">Uses the current target language.</p><p data-copy="zh" hidden>使用当前设置的目标语言。</p></div></div>
+          <div><span><kbd>⇧</kbd><kbd>⌥</kbd><kbd>⌘</kbd><kbd>V</kbd></span><div><strong data-copy="en">Choose a language and paste</strong><strong data-copy="zh" hidden>选择语言并粘贴</strong><p data-copy="en">Select a target language for this paste.</p><p data-copy="zh" hidden>为这一次粘贴临时选择目标语言。</p></div></div>
+        </div>
+      </section>
+
+      <section id="faq" class="support-section">
+        <div class="support-section-title"><span>03</span><h2 data-copy="en">Frequently asked questions</h2><h2 data-copy="zh" hidden>常见问题</h2></div>
+        <div class="faq-list" data-copy="en">
+          <details open><summary>Why does TransPaste need permission?<span>+</span></summary><p>TransPaste requests the macOS PostEvent permission only so it can send the paste command after translation. It does not read your screen or monitor your typing.</p></details>
+          <details><summary>Why is the first translation slightly slower?<span>+</span></summary><p>The first request loads the on-device language model. TransPaste warms up your current language pair in the background after launch to reduce the delay.</p></details>
+          <details><summary>What happens to my original clipboard?<span>+</span></summary><p>TransPaste temporarily stages the translated text, sends the paste command, and then restores the original clipboard when it is safe to do so.</p></details>
+          <details><summary>Can I paste the same translation more than once?<span>+</span></summary><p>Yes. The latest result is cached in memory for fast repeated pasting. Copying new text or changing the target language naturally replaces it.</p></details>
+          <details><summary>Does TransPaste upload my text?<span>+</span></summary><p>No. Translation is performed on your Mac using Apple’s Translation framework. TransPaste does not operate a server for your clipboard content.</p></details>
+        </div>
+        <div class="faq-list" data-copy="zh" hidden>
+          <details open><summary>为什么 TransPaste 需要系统权限？<span>+</span></summary><p>TransPaste 只申请 macOS 的 PostEvent 权限，用于在翻译完成后发送粘贴指令。它不会读取屏幕，也不会监控键盘输入。</p></details>
+          <details><summary>为什么第一次翻译稍慢？<span>+</span></summary><p>第一次请求需要加载本地语言模型。应用启动后会在后台预热当前语言组合，以减少首次使用的等待。</p></details>
+          <details><summary>原来的剪贴板内容会怎样？<span>+</span></summary><p>TransPaste 会临时写入译文并发送粘贴指令，随后在安全的情况下恢复原始剪贴板。</p></details>
+          <details><summary>同一段译文可以多次粘贴吗？<span>+</span></summary><p>可以。最近一次译文会保存在内存中供快速重复粘贴；复制新文字或切换目标语言后会自然替换。</p></details>
+          <details><summary>TransPaste 会上传我的文字吗？<span>+</span></summary><p>不会。翻译通过 Apple Translation 框架在 Mac 本地处理，TransPaste 不设服务器接收剪贴板内容。</p></details>
+        </div>
+      </section>
+
+      <section id="privacy" class="support-section privacy-policy">
+        <div class="support-section-title"><span>04</span><h2 data-copy="en">Privacy policy</h2><h2 data-copy="zh" hidden>隐私政策</h2></div>
+        <p class="policy-meta" data-copy="en">Effective July 10, 2026</p><p class="policy-meta" data-copy="zh" hidden>生效日期：2026 年 7 月 10 日</p>
+        <div class="policy-copy" data-copy="en">
+          <h3>Overview</h3><p>TransPaste is developed by Hainan Honglong Zhiyuan Technology Co., LTD. We designed the app to perform its core function without creating an account or sending clipboard text to our servers.</p>
+          <h3>Clipboard data</h3><p>TransPaste reads clipboard text only after you explicitly trigger a translation. The translated text is temporarily placed on the clipboard for pasting. When the clipboard has not changed, TransPaste restores the original content.</p>
+          <h3>Translation processing</h3><p>Translation is performed on your device through Apple’s Translation framework. TransPaste does not operate a remote translation server and does not receive the source or translated text.</p>
+          <h3>Data collection and retention</h3><p>We do not collect personal information, clipboard content, translation history, keyboard input, screen content, analytics, advertising identifiers, or usage profiles through TransPaste. The most recent translation may remain temporarily in app memory to support repeated pasting and is cleared when the app exits or a new result replaces it.</p>
+          <h3>System permission</h3><p>TransPaste requests the macOS PostEvent permission solely to send the paste keyboard command after a user-initiated translation. This permission is not used to read screen content or monitor typing.</p>
+          <h3>Children’s privacy</h3><p>TransPaste does not knowingly collect information from children or from any other user.</p>
+          <h3>Changes</h3><p>If this policy changes, the updated version and effective date will be published on this page.</p>
+          <h3>Contact</h3><p>For support or privacy questions, email <a href="mailto:ansonjhx@gmail.com">ansonjhx@gmail.com</a>.</p>
+        </div>
+        <div class="policy-copy" data-copy="zh" hidden>
+          <h3>概述</h3><p>TransPaste 由 Hainan Honglong Zhiyuan Technology Co., LTD 开发。应用无需创建账号，也不会将剪贴板文字发送至我们的服务器。</p>
+          <h3>剪贴板数据</h3><p>TransPaste 只会在用户主动触发翻译后读取剪贴板文字。为了完成粘贴，译文会被临时写入剪贴板；如果剪贴板没有发生其他变化，应用会恢复原始内容。</p>
+          <h3>翻译处理</h3><p>翻译通过 Apple Translation 框架在设备本地完成。TransPaste 不运营远程翻译服务器，也不会接收原文或译文。</p>
+          <h3>数据收集与保留</h3><p>我们不会通过 TransPaste 收集个人信息、剪贴板内容、翻译历史、键盘输入、屏幕内容、分析数据、广告标识符或使用画像。为支持重复粘贴，最近一次译文可能短暂保留在应用内存中，并会在应用退出或被新结果替换时清除。</p>
+          <h3>系统权限</h3><p>TransPaste 申请 macOS PostEvent 权限，仅用于在用户主动翻译后发送粘贴快捷键。该权限不会用于读取屏幕或监控键盘输入。</p>
+          <h3>儿童隐私</h3><p>TransPaste 不会有意收集儿童或任何其他用户的信息。</p>
+          <h3>政策变更</h3><p>如本政策发生变化，我们将在本页面发布更新后的内容与生效日期。</p>
+          <h3>联系我们</h3><p>如有技术支持或隐私问题，请发送邮件至 <a href="mailto:ansonjhx@gmail.com">ansonjhx@gmail.com</a>。</p>
+        </div>
+      </section>
+
+      <section class="support-contact"><img src="../icon.svg" alt=""><div><span class="eyebrow" data-copy="en">Need more help?</span><span class="eyebrow" data-copy="zh" hidden>仍需要帮助？</span><h2 data-copy="en">Include your macOS version and the steps that caused the issue.</h2><h2 data-copy="zh" hidden>请同时提供 macOS 版本与问题复现步骤。</h2></div><a class="email-button" href="mailto:ansonjhx@gmail.com">ansonjhx@gmail.com</a></section>
+
+      <footer class="site-footer"><div><strong>TransPaste</strong><p data-copy="en">Translate text at the speed of paste.</p><p data-copy="zh" hidden>让翻译像粘贴一样自然。</p></div><div class="footer-links"><a href="./"><span data-copy="en">Support</span><span data-copy="zh" hidden>技术支持</span></a><a href="#privacy"><span data-copy="en">Privacy</span><span data-copy="zh" hidden>隐私政策</span></a></div><p class="copyright">© 2026 Hainan Honglong Zhiyuan Technology Co., LTD</p></footer>
+    </div>
+  </main>
+  <script src="../site.js"></script>
+</body>
+</html>
