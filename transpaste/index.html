@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TransPaste — Translate Text as You Paste</title>
+  <meta name="description" content="A lightweight macOS menu bar utility that translates copied text and pastes it in your chosen language.">
+  <meta name="theme-color" content="#f7f5f0">
+  <link rel="canonical" href="https://ansonjiang76.github.io/zhinian-support/transpaste/">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="TransPaste home"><img src="./icon.svg" alt=""><span>TransPaste</span></a>
+        <nav aria-label="Primary navigation">
+          <a href="#features"><span data-copy="en">Features</span><span data-copy="zh" hidden>功能</span></a>
+          <a href="./support/"><span data-copy="en">Support</span><span data-copy="zh" hidden>支持</span></a>
+          <a href="./support/#privacy"><span data-copy="en">Privacy</span><span data-copy="zh" hidden>隐私</span></a>
+        </nav>
+        <div class="language-switch" aria-label="Language selection">
+          <button type="button" data-language-button="en" aria-pressed="true">EN</button>
+          <button type="button" data-language-button="zh" aria-pressed="false">中文</button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow" data-copy="en">Built for macOS</span><span class="eyebrow" data-copy="zh" hidden>专为 macOS 打造</span>
+          <h1 data-copy="en">Translate at the speed of <em>paste.</em></h1>
+          <h1 data-copy="zh" hidden>让翻译像<em>粘贴</em>一样自然。</h1>
+          <p class="hero-lede" data-copy="en">Copy text, press one shortcut, and paste it instantly in your chosen language — without breaking your flow.</p>
+          <p class="hero-lede" data-copy="zh" hidden>复制文字，按下一个快捷键，即可将目标语言译文直接粘贴到当前输入框，不打断工作节奏。</p>
+          <div class="hero-actions">
+            <span class="primary-cta"><span class="apple-mark">●</span><span data-copy="en">Coming soon to the Mac App Store</span><span data-copy="zh" hidden>即将登陆 Mac App Store</span></span>
+            <a class="secondary-cta" href="./support/"><span data-copy="en">View support</span><span data-copy="zh" hidden>查看使用帮助</span></a>
+          </div>
+          <p class="privacy-note"><span aria-hidden="true">◆</span><span data-copy="en">On-device translation. No accounts. No history.</span><span data-copy="zh" hidden>本地翻译，无需账号，不保存历史。</span></p>
+        </div>
+
+        <div class="hero-visual" aria-label="TransPaste workflow">
+          <div class="icon-aura"></div>
+          <img class="hero-icon" src="./icon.svg" alt="TransPaste app icon" width="430" height="430">
+          <div class="workflow-card source-card"><span data-copy="en">COPIED</span><span data-copy="zh" hidden>已复制</span><p>Hello, see you tomorrow.</p></div>
+          <div class="shortcut-chip"><kbd>⌥</kbd><kbd>⌘</kbd><kbd>V</kbd></div>
+          <div class="workflow-card result-card"><span data-copy="en">PASTED</span><span data-copy="zh" hidden>已粘贴</span><p>你好，明天见。</p></div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Product benefits">
+        <div><strong data-copy="en">1 shortcut</strong><strong data-copy="zh" hidden>一个快捷键</strong><span data-copy="en">from copy to translation</span><span data-copy="zh" hidden>从复制到译文</span></div>
+        <div><strong data-copy="en">On device</strong><strong data-copy="zh" hidden>本地处理</strong><span data-copy="en">your text stays private</span><span data-copy="zh" hidden>文字内容更私密</span></div>
+        <div><strong data-copy="en">Clipboard-safe</strong><strong data-copy="zh" hidden>保护剪贴板</strong><span data-copy="en">the original is restored</span><span data-copy="zh" hidden>粘贴后恢复原文</span></div>
+      </section>
+
+      <section id="features" class="section-block">
+        <div class="section-heading">
+          <span class="eyebrow" data-copy="en">Small utility, big difference</span><span class="eyebrow" data-copy="zh" hidden>小工具，大不同</span>
+          <h2 data-copy="en">Translation that stays out of your way.</h2><h2 data-copy="zh" hidden>翻译融入工作流，而不是打断工作流。</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-primary"><div class="feature-number">01</div><h3 data-copy="en">Translate and paste</h3><h3 data-copy="zh" hidden>翻译并直接粘贴</h3><p data-copy="en">Press Option–Command–V in almost any text field. TransPaste handles the rest.</p><p data-copy="zh" hidden>在常用输入框中按下 Option–Command–V，其余步骤交给 TransPaste。</p><div class="key-row"><kbd>⌥</kbd><kbd>⌘</kbd><kbd>V</kbd></div></article>
+          <article class="feature-card"><div class="feature-number">02</div><h3 data-copy="en">Choose languages quickly</h3><h3 data-copy="zh" hidden>快速选择目标语言</h3><p data-copy="en">Switch your default from the menu bar, or pick a language just for the next paste.</p><p data-copy="zh" hidden>通过菜单栏切换默认语言，也可以只为下一次粘贴临时选择语言。</p></article>
+          <article class="feature-card"><div class="feature-number">03</div><h3 data-copy="en">Paste again, instantly</h3><h3 data-copy="zh" hidden>重复粘贴，更快一步</h3><p data-copy="en">The latest translation is reused for fast repeated pasting, while your original clipboard is preserved.</p><p data-copy="zh" hidden>自动复用最近译文，连续粘贴无需重新翻译，同时保留原始剪贴板。</p></article>
+          <article class="feature-card privacy-card"><div class="feature-number">04</div><h3 data-copy="en">Private by design</h3><h3 data-copy="zh" hidden>隐私从设计开始</h3><p data-copy="en">Text is translated locally using Apple’s Translation framework. TransPaste has no account system or translation history.</p><p data-copy="zh" hidden>文字通过 Apple Translation 框架在本地翻译。TransPaste 没有账号系统，也不保存翻译历史。</p></article>
+        </div>
+      </section>
+
+      <section class="steps-section">
+        <div class="section-heading"><span class="eyebrow" data-copy="en">Three simple steps</span><span class="eyebrow" data-copy="zh" hidden>简单三步</span><h2 data-copy="en">Copy. Shortcut. Done.</h2><h2 data-copy="zh" hidden>复制、按键、完成。</h2></div>
+        <ol class="steps-list">
+          <li><span>1</span><div><strong data-copy="en">Copy text</strong><strong data-copy="zh" hidden>复制文字</strong><p data-copy="en">From a browser, document, message, or any other app.</p><p data-copy="zh" hidden>来自浏览器、文档、消息或其他应用。</p></div></li>
+          <li><span>2</span><div><strong data-copy="en">Press ⌥⌘V</strong><strong data-copy="zh" hidden>按下 ⌥⌘V</strong><p data-copy="en">TransPaste detects the source language and translates locally.</p><p data-copy="zh" hidden>TransPaste 识别原文语言并在本地完成翻译。</p></div></li>
+          <li><span>3</span><div><strong data-copy="en">Keep typing</strong><strong data-copy="zh" hidden>继续输入</strong><p data-copy="en">The translation appears where your cursor is, and the original clipboard returns.</p><p data-copy="zh" hidden>译文出现在光标位置，随后恢复原始剪贴板。</p></div></li>
+        </ol>
+      </section>
+
+      <section class="closing-card"><img src="./icon.svg" alt=""><div><span class="eyebrow">TransPaste for macOS</span><h2 data-copy="en">Make every paste multilingual.</h2><h2 data-copy="zh" hidden>让每一次粘贴都跨越语言。</h2></div><span class="status-pill" data-copy="en">Coming soon</span><span class="status-pill" data-copy="zh" hidden>即将发布</span></section>
+
+      <footer class="site-footer"><div><strong>TransPaste</strong><p data-copy="en">Translate text at the speed of paste.</p><p data-copy="zh" hidden>让翻译像粘贴一样自然。</p></div><div class="footer-links"><a href="./support/"><span data-copy="en">Support</span><span data-copy="zh" hidden>技术支持</span></a><a href="./support/#privacy"><span data-copy="en">Privacy</span><span data-copy="zh" hidden>隐私政策</span></a></div><p class="copyright">© 2026 Hainan Honglong Zhiyuan Technology Co., LTD</p></footer>
+    </div>
+  </main>
+  <script src="./site.js"></script>
+</body>
+</html>
